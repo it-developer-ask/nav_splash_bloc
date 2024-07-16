@@ -11,6 +11,8 @@ class AppColors {
   static const Color navbarBgColor = const Color(0xFF191F35);
   static const Color navbarMidBgColor = const Color(0xFF454958);
   static const Color navbarFgColor = const Color(0xFFFFFFFF);
+  static const Color shopScaffoldBgColor = const Color(0xFFFFFFFF);
+  static const Color shopScaffoldFgColor = const Color(0xFF191F35);
 
   static const Color singleLoopGradientColorLight = const Color(0xFFFDD721);
   static const Color singleLoopGradientColorDark = const Color(0xFF9F8403);

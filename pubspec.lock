@@ -91,6 +91,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gradient_progress_indicator:
+    dependency: "direct main"
+    description:
+      name: gradient_progress_indicator
+      sha256: "33c02b1ab01450f7217c02986479e2689e049cdcac003d87df730545ba9bcba0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0+5"
   leak_tracker:
     dependency: transitive
     description:
@@ -242,4 +250,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.4 <4.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=1.17.0"
