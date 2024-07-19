@@ -24,7 +24,7 @@ class MainHomeNavbarScreen extends StatelessWidget {
         List<BottomAppBarItem> bottomNavItems = <BottomAppBarItem>[
           BottomAppBarItem(
             title: "Health",
-            imageUrl: 'assets/icons/health_icon.png',
+            imageUrl: 'assets/health_icon.png',
             toNotShowSelector: state.tabIndex == 0 ? false : true,
             onTap: () {
               BlocProvider.of<MainHomeNavbarScreenBloc>(context)
@@ -41,7 +41,7 @@ class MainHomeNavbarScreen extends StatelessWidget {
           ),
           BottomAppBarItem(
             title: "Shop",
-            imageUrl: 'assets/icons/shop.png',
+            imageUrl: 'assets/shop.png',
             toNotShowSelector: state.tabIndex == 2 ? false : true,
             onTap: () {
               BlocProvider.of<MainHomeNavbarScreenBloc>(context)
