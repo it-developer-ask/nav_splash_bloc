@@ -9,11 +9,13 @@ class ShopScreen extends StatelessWidget {
     return const Scaffold(
       backgroundColor: AppColors.shopScaffoldBgColor,
       body: Center(
-        child: Text("Shop",style: TextStyle(color: AppColors.primaryBlueColor,fontSize: 30),),
-        // child: Text(
-        //   'Index 2: Shop',
-        //   style: TextStyle(color: AppColors.shopScaffoldFgColor),
-        // ),
+        child: Text(
+          "Shop",
+          style: TextStyle(
+            color: AppColors.primaryBlueColor,
+            fontSize: 30,
+          ),
+        ),
       ),
     );
   }
