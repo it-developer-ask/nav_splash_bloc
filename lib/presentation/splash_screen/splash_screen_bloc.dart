@@ -12,19 +12,27 @@ class AppSplashScreenCubit extends Cubit<AppSplashScreenState> {
   AppSplashScreenCubit() : super(AppSplashScreenState.initial);
 
   void loadData() {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       emit(AppSplashScreenState.loaded);
     });
   }
 
   void navigateToNextScreen(BuildContext context) {
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (_) => BlocProvider(
+    Navigator.pushReplacement(context,
+      PageRouteBuilder(
+        pageBuilder: (_, __, ___) => BlocProvider(
           create: (context) => MainHomeNavbarScreenBloc(),
-          child: MainHomeNavbarScreen(),
+          child: const MainHomeNavbarScreen(),
         ),
+        transitionDuration: const Duration(seconds: 1),
+        transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
       ),
+      // MaterialPageRoute(
+      //   builder: (_) => BlocProvider(
+      //     create: (context) => MainHomeNavbarScreenBloc(),
+      //     child: MainHomeNavbarScreen(),
+      //   ),
+      // ),
     );
   }
 }

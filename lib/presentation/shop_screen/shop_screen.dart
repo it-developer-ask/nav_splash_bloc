@@ -6,7 +6,7 @@ class ShopScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.shopScaffoldBgColor,
       body: Center(
         child: Text(

@@ -1,3 +1,4 @@
 class AppTexts {
-  static const String appTitle = "BLoC Bottom Nav Splash";
+  static const String appTitle = "Upside Health";
+  static const String fontFamilyAvenir = "avenir";
 }

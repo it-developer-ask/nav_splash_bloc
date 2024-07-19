@@ -16,7 +16,7 @@ class AppSplashScreen extends StatelessWidget {
             AppSplashScreenCubit().navigateToNextScreen(context);
           }
         },
-        child: StaticSplashScreen(),
+        child: const StaticSplashScreen(),
       ),
     );
   }
@@ -29,12 +29,10 @@ class StaticSplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.scaffoldBgColor,
-      body: Container(
-        child: Center(
-          child: Image.asset(
-            'assets/u_sense_splash.png',
-            width: 250,
-          ),
+      body: Center(
+        child: Image.asset(
+          'assets/u_sense_splash.png',
+          width: 250,
         ),
       ),
     );

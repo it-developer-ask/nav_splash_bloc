@@ -6,13 +6,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: AppColors.scaffoldBgColor,
       body: Center(
-        child: Text(
-          'Index 0: Health',
-          style: TextStyle(color: AppColors.primaryWhiteColor),
-        ),
+        child: Text("Index 1: Home"),
       ),
     );
   }

@@ -72,15 +72,15 @@ class BottomAppBarItem extends StatelessWidget {
                     ? AppColors.navbarMidBgColor
                     : AppColors.navbarFgColor,
               ),
-              child: Image.asset(
-                  centerImageUrl ?? 'assets/center_button.png'),
               padding: EdgeInsets.only(left: centerWidgetLeftPadding ?? 5),
               margin:
                   EdgeInsets.only(bottom: toNotShowSelector == true ? 5 : 1),
+              child: Image.asset(
+                  centerImageUrl ?? 'assets/icons/center_button.png'),
             ),
           if (isCenterWidget != true)
             Image.asset(
-              imageUrl ?? 'assets/circle.png',
+              imageUrl ?? 'assets/icons/circle.png',
               width: imageSize ?? 30,
               height: imageSize ?? 30,
               color: fgColor ?? AppColors.navbarFgColor,
