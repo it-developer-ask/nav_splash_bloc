@@ -26,6 +26,8 @@ class MainHomeNavbarScreen extends StatelessWidget {
             title: "Health",
             imageUrl: 'assets/health_icon.png',
             toNotShowSelector: state.tabIndex == 0 ? false : true,
+            bgColor: state.tabIndex == 2 ? AppColors.navbarFgColor : AppColors.navbarBgColor,
+            fgColor: state.tabIndex == 2 ? AppColors.navbarBgColor : AppColors.navbarFgColor,
             onTap: () {
               BlocProvider.of<MainHomeNavbarScreenBloc>(context)
                   .add(TabChange(tabIndex: 0));
@@ -34,6 +36,7 @@ class MainHomeNavbarScreen extends StatelessWidget {
           BottomAppBarItem(
             isCenterWidget: true,
             toNotShowSelector: state.tabIndex == 1 ? false : true,
+            bgColor: state.tabIndex == 2 ? AppColors.navbarFgColor : AppColors.navbarBgColor,
             onTap: () {
               BlocProvider.of<MainHomeNavbarScreenBloc>(context)
                   .add(TabChange(tabIndex: 1));
@@ -42,6 +45,8 @@ class MainHomeNavbarScreen extends StatelessWidget {
           BottomAppBarItem(
             title: "Shop",
             imageUrl: 'assets/shop.png',
+            fgColor: state.tabIndex == 2 ? AppColors.navbarBgColor : AppColors.navbarFgColor,
+            bgColor: state.tabIndex == 2 ? AppColors.navbarFgColor : AppColors.navbarBgColor,
             toNotShowSelector: state.tabIndex == 2 ? false : true,
             onTap: () {
               BlocProvider.of<MainHomeNavbarScreenBloc>(context)
@@ -54,7 +59,7 @@ class MainHomeNavbarScreen extends StatelessWidget {
           body: bottomNavScreen.elementAt(state.tabIndex),
           bottomNavigationBar: Container(
             height: 80,
-            color: AppColors.navbarBgColor,
+            color: state.tabIndex == 2 ? AppColors.navbarFgColor : AppColors.navbarBgColor,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: bottomNavItems,
