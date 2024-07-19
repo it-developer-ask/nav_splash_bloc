@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       backgroundColor: AppColors.scaffoldBgColor,
       body: Center(
-        child: Text("Index 1: Home"),
+        child: Text("Home",style: TextStyle(color: AppColors.primaryWhiteColor,fontSize: 30),),
       ),
     );
   }
